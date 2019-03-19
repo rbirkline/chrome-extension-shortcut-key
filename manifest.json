@@ -1,7 +1,7 @@
 {
     "name": "Play a sound",
     "version": "1.0",
-    "description": "Ever want to play a sound when a key is pressed.  This extension will play a sound on a CTRL+Z.",
+    "description": "Ever want to play a sound when a key is pressed.  This extension will play a sound on a CTRL+SHIFT+Z.",
     "manifest_version": 2,
 
     "permissions": ["storage"],
@@ -16,7 +16,7 @@
     "commands": {
         "trigger_sound": {
           "suggested_key": {
-            "default": "Ctrl+Z"
+            "default": "Ctrl+Shift+Z"
           },
           "description": "Toggle Sound"
         }

@@ -35,13 +35,13 @@ chrome.storage.sync.get(['sound'], function(result) {
 
 
 function setPlayer(x){
-
+  console.log('play sound');
   for (let i of document.querySelectorAll('#sound_list li')){
     i.className = '';
   }
   x.className = 'selected';
   let a = document.querySelector('#play_sound');
-  a.setAttribute('src','sounds/'+sounds[x.getAttribute('data-id')]);
+  a.setAttribute('src','../sounds/'+sounds[x.getAttribute('data-id')]);
   a.play();
 
   document.querySelector('#s_new_sound').innerText = x.innerText;
