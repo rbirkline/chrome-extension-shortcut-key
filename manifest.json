@@ -1,0 +1,35 @@
+{
+    "name": "Play a sound",
+    "version": "1.0",
+    "description": "Ever want to play a sound when a key is pressed.  This extension will play a sound on a CTRL+Z.",
+    "manifest_version": 2,
+
+    "permissions": ["storage"],
+
+    "background": {
+      "scripts": ["background.js"],
+      "persistent": false
+    },
+    "options_page": "files/options.html",
+
+
+    "commands": {
+        "trigger_sound": {
+          "suggested_key": {
+            "default": "Ctrl+Z"
+          },
+          "description": "Toggle Sound"
+        }
+      },
+
+    "page_action": {
+      "default_icon": {
+        "16": "images/speaker16.png",
+        "128": "images/speaker128.png"
+      }
+    },
+    "icons": {
+      "16": "images/speaker16.png",
+      "128": "images/speaker128.png"
+    }
+  }

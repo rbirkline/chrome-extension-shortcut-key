@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <title>Shortcut Key - Options</title>
+      <style>
+      body, button{
+        font-size: .90em;
+
+      }
+      h1{
+        display:flex;
+        align-items: center;
+      }
+      #sound_list, #sound_list li{
+        padding: 0px;
+        margin: 0px;
+      }
+
+      #sound_list li, button{
+        display:inline-block;
+        margin: 10px;
+        background-color: #eee;
+        border-radius: 10px;
+        padding: 10px;
+        cursor:pointer;
+      }
+      #sound_list li.selected{
+        background-color: #bbb;
+      }
+      </style>
+    </head>
+    <body>
+      <div>
+        <h1><img src="../images/speaker128.png" style="width: 50px" />&nbsp;Shortcut Keys</h1>
+
+        <h2>How to use:</h2>
+        <p>The key stroke Ctrl+Z on Window and CMD+Z for Macs will play.... <strong><span id="current_sound"></span></strong></p>
+
+<hr />
+
+        <h2>Preview/Set Sound</h2>
+        <p>Click the sound button below to preview.  Click the save button to set the sound.</p>
+
+        <ul id="sound_list"></ul>
+
+        <audio  id="play_sound"></audio>
+        <p>
+          When you find the sound you like, hit save button to save to set the default sound to <strong><span id="s_new_sound"></span></strong>.
+          <input id="new_sound" value="" type="hidden" /> <button id="save_button">save</button>
+        </p>
+      </div>
+    </body>
+    <script src="options.js"></script>
+  </html>
